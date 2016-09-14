@@ -15,11 +15,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        roundImageButton.imageAction = makeSomeAction
+        roundImageButton.imageAction = onImageClicked
         
     }
 
-    func makeSomeAction(object:AnyObject)->()
+    func onImageClicked(object:AnyObject)->()
     {
         let alert=UIAlertView(title: "", message: "Acton on tap", delegate: nil, cancelButtonTitle: "Ok")
         alert.show()
