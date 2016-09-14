@@ -28,9 +28,11 @@ class RatingControl: UIView {
             
         }
     }
+    
     override func intrinsicContentSize() -> CGSize {
         return CGSize(width: 240,height: 44)
     }
+    
     func setMark(mark:Int)->()
     {
       self.selectedMark = mark
@@ -74,6 +76,7 @@ class RatingControl: UIView {
             setImage()
             self.addTarget(self, action: #selector(RatingButton.ratingButtonTapped(_:)), forControlEvents: .TouchUpInside)
         }
+        
         func ratingButtonTapped(button: UIButton) {
             if (parent != nil && parent.clickable){
             wasSelected = !wasSelected
@@ -85,6 +88,7 @@ class RatingControl: UIView {
             }
             }
         }
+        
         func setImage()->()
         {
             self.setImage(UIImage(named:(wasSelected ? "filledstar" : "emptystar") ), forState: UIControlState.Normal)

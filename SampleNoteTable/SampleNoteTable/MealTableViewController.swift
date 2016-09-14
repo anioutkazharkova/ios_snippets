@@ -19,6 +19,7 @@ class MealTableViewController: UITableViewController {
         loadData()
         
     }
+    
     func loadData()->()
     {
        meals.append(Meal(name: "Salad",mark: 3,photo: UIImage(named: "meal1"))!)
@@ -45,6 +46,7 @@ class MealTableViewController: UITableViewController {
             }
         }
     }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "ShowDetail")
         {

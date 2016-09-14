@@ -43,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		631E770A1D898F6A005F14E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				844BB59F1D89123C00070669 /* ViewController.swift */,
+				84F544C41D8948560025E491 /* MealTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		84070FD21D893D6400D42AEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,16 +95,15 @@
 		844BB59C1D89123C00070669 /* SampleNoteTable */ = {
 			isa = PBXGroup;
 			children = (
+				631E770A1D898F6A005F14E0 /* Controller */,
 				84070FD61D89401800D42AEA /* ViewModel */,
 				84070FD31D893D6B00D42AEA /* Views */,
 				84070FD21D893D6400D42AEA /* Model */,
 				844BB59D1D89123C00070669 /* AppDelegate.swift */,
-				844BB59F1D89123C00070669 /* ViewController.swift */,
 				844BB5A11D89123C00070669 /* Main.storyboard */,
 				844BB5A61D89123C00070669 /* LaunchScreen.storyboard */,
 				844BB5A91D89123C00070669 /* Info.plist */,
 				84BDD32D1D892EEA003DF2E6 /* Images.xcassets */,
-				84F544C41D8948560025E491 /* MealTableViewController.swift */,
 			);
 			path = SampleNoteTable;
 			sourceTree = "<group>";

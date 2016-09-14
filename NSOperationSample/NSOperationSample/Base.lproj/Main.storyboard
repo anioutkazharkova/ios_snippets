@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSOperationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXX-8e-XiD">
+                                <rect key="frame" x="100" y="40" width="400" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-6q-x3u">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HSp-lu-qJW">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="TmJ-gt-7Hc"/>
+                                                    <constraint firstAttribute="height" constant="200" id="tQP-Bm-IrH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ICt-oy-Ygo">
+                                                <rect key="frame" x="0.0" y="200" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="Fko-HA-Z4L"/>
+                                                    <constraint firstAttribute="width" constant="200" id="jsw-93-Tuk"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ybJ-oM-Ye9">
+                                        <rect key="frame" x="200" y="0.0" width="200" height="400"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mvT-bL-vKX">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="LVN-1H-zKv"/>
+                                                    <constraint firstAttribute="height" constant="200" id="fMq-E6-1x7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="osb-VS-V8t">
+                                                <rect key="frame" x="0.0" y="200" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="3aM-ZH-GIb"/>
+                                                    <constraint firstAttribute="height" constant="200" id="W70-nh-oxJ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5An-2I-rSo">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ilj-dO-17h"/>
+                                    <barButtonItem title="Serial" id="XEb-vU-fcZ">
+                                        <connections>
+                                            <action selector="onSerialLoad:" destination="BYZ-38-t0r" id="8lN-RI-Xgn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ggf-SM-Wvz"/>
+                                    <barButtonItem title="Concurent" id="y4T-9C-Ds2">
+                                        <connections>
+                                            <action selector="onConcurentLoad:" destination="BYZ-38-t0r" id="tKe-ey-RgU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Qx0-o4-snG"/>
+                                    <barButtonItem title="NSOperation" id="PYm-iP-qxA">
+                                        <connections>
+                                            <action selector="onOperationLoad:" destination="BYZ-38-t0r" id="itL-yH-yz7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ObY-1A-YWB"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NXX-8e-XiD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Aw-h2-yMA"/>
+                            <constraint firstItem="5An-2I-rSo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ZfN-QA-TFh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5An-2I-rSo" secondAttribute="trailing" constant="-20" id="qtT-2v-FmF"/>
+                            <constraint firstItem="NXX-8e-XiD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="vJQ-AD-PH9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5An-2I-rSo" secondAttribute="bottom" id="wz7-NO-auC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="concurrentLoadButton" destination="y4T-9C-Ds2" id="Fjt-6X-FpZ"/>
+                        <outlet property="firstImage" destination="HSp-lu-qJW" id="tvY-zq-p7q"/>
+                        <outlet property="forthImage" destination="osb-VS-V8t" id="LZC-u6-R23"/>
+                        <outlet property="loadOperationButton" destination="PYm-iP-qxA" id="Rdy-bD-BNr"/>
+                        <outlet property="secondImage" destination="ICt-oy-Ygo" id="tq0-b8-EHK"/>
+                        <outlet property="serialLoadButton" destination="XEb-vU-fcZ" id="vgm-MR-6dn"/>
+                        <outlet property="thirdImage" destination="mvT-bL-vKX" id="vEC-D5-vkI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

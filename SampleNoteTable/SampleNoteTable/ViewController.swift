@@ -46,8 +46,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         self.navigationController?.popViewControllerAnimated(true)
     }
     
-    @IBAction func onSaveClicked(sender: UIBarButtonItem) {
-    }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (sender === saveButton)
