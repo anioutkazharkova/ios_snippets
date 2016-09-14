@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocialSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gpn-vy-g7I">
+                                <rect key="frame" x="236" y="268" width="130" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orj-Sp-Bcd">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="4ee-ya-0gj"/>
+                                            <constraint firstAttribute="width" constant="65" id="XMq-9v-zns"/>
+                                        </constraints>
+                                        <state key="normal" image="fb"/>
+                                        <connections>
+                                            <action selector="postToFB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJp-yW-Ms8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSI-wL-gWi">
+                                        <rect key="frame" x="65" y="0.0" width="65" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="YIz-YC-gfD"/>
+                                            <constraint firstAttribute="height" constant="65" id="biT-SV-IQi"/>
+                                        </constraints>
+                                        <state key="normal" image="tw"/>
+                                        <connections>
+                                            <action selector="postToTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMO-tn-2hs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gpn-vy-g7I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3tk-gj-erV"/>
+                            <constraint firstItem="Gpn-vy-g7I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fK1-NS-OdS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fb" width="64" height="64"/>
+        <image name="tw" width="256" height="256"/>
+    </resources>
+</document>
