@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleShareApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Type some text to share" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5en-4b-8D7">
+                                <rect key="frame" x="20" y="28" width="560" height="425"/>
+                                <color key="backgroundColor" red="0.97018160994764402" green="0.97018160994764402" blue="0.97018160994764402" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpZ-0S-K8B">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1Dn-Gh-YNg"/>
+                                    <barButtonItem title="Share like action" id="nId-Ck-Gd6">
+                                        <connections>
+                                            <action selector="shareWithActionSheet:" destination="BYZ-38-t0r" id="4ll-D2-uTq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Nbu-hh-DkL"/>
+                                    <barButtonItem title="Share like controller" id="ouq-xh-cor">
+                                        <connections>
+                                            <action selector="shareWithController:" destination="BYZ-38-t0r" id="GvP-cj-7jp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jew-t9-Z2s"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5en-4b-8D7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LB4-hw-bVf"/>
+                            <constraint firstItem="5en-4b-8D7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="S9D-IN-wFm"/>
+                            <constraint firstItem="jpZ-0S-K8B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="TTg-Q5-0xB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jpZ-0S-K8B" secondAttribute="trailing" constant="-20" id="dSh-zc-EVi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jpZ-0S-K8B" secondAttribute="bottom" id="qlz-gB-pAK"/>
+                            <constraint firstItem="5en-4b-8D7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rNT-IM-BcH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="5en-4b-8D7" id="Wjx-tz-lct"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="354"/>
+        </scene>
+    </scenes>
+</document>
