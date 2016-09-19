@@ -2,21 +2,21 @@
 //  ApiClient.swift
 //  SwiftCore
 //
-//  Created by Admin on 15.09.16.
+//  Created by Admin on 16.09.16.
 //  Copyright © 2016 Admin. All rights reserved.
 //
 
 import Foundation
 
-class ApiClient:ApiProtocol
+class ApiClient:ApiClientProtocol
 {
-    var downloader:DownloaderProtocol!
+    private var downloader:NetworkProtocol!
     
-    init(downloader:DownloaderProtocol!)
-    {
+    required init(downloader: NetworkProtocol!) {
         self.downloader=downloader
     }
-    func getImageByUrl(url: String) -> NSData! {
-       return downloader?.DownloadFile(url)
+    func  getImageByUrl(url:String)->NSData!
+    {
+    return self.downloader?.downloadFile(url)
     }
 }

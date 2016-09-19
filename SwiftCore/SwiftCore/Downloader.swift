@@ -2,17 +2,17 @@
 //  Downloader.swift
 //  SwiftCore
 //
-//  Created by Admin on 15.09.16.
+//  Created by Admin on 16.09.16.
 //  Copyright © 2016 Admin. All rights reserved.
 //
 
 import Foundation
 
-class Downloader:DownloaderProtocol
+class Downloader:NetworkProtocol
 {
-    func DownloadFile(urlPath: String) -> NSData! {
-        let data = NSData(contentsOfURL: NSURL(string: urlPath)!)
-        return data
-        
+    
+    func downloadFile(url: String) -> NSData! {
+       
+    return NSData(contentsOfURL: NSURL(string: url)!)
     }
 }

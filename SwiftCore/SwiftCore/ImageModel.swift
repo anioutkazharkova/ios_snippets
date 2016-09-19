@@ -2,16 +2,14 @@
 //  ImageModel.swift
 //  SwiftCore
 //
-//  Created by Admin on 15.09.16.
+//  Created by Admin on 16.09.16.
 //  Copyright © 2016 Admin. All rights reserved.
 //
 
 import Foundation
 
-
-class ImageModel
+class ImageModel:ModelProtocol
 {
     var imageUrl:String?
     var imageData:NSData?
-    
 }

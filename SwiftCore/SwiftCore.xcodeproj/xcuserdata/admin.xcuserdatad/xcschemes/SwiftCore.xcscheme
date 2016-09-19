@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8497B9551D8AA82C00055F59"
+               BlueprintIdentifier = "840C32BD1D8BA8C900D24230"
                BuildableName = "SwiftCore.app"
                BlueprintName = "SwiftCore"
                ReferencedContainer = "container:SwiftCore.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8497B9551D8AA82C00055F59"
+            BlueprintIdentifier = "840C32BD1D8BA8C900D24230"
             BuildableName = "SwiftCore.app"
             BlueprintName = "SwiftCore"
             ReferencedContainer = "container:SwiftCore.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8497B9551D8AA82C00055F59"
+            BlueprintIdentifier = "840C32BD1D8BA8C900D24230"
             BuildableName = "SwiftCore.app"
             BlueprintName = "SwiftCore"
             ReferencedContainer = "container:SwiftCore.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8497B9551D8AA82C00055F59"
+            BlueprintIdentifier = "840C32BD1D8BA8C900D24230"
             BuildableName = "SwiftCore.app"
             BlueprintName = "SwiftCore"
             ReferencedContainer = "container:SwiftCore.xcodeproj">

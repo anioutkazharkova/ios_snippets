@@ -7,43 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8497B95A1D8AA82D00055F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B9591D8AA82D00055F59 /* AppDelegate.swift */; };
-		8497B95C1D8AA82D00055F59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B95B1D8AA82D00055F59 /* ViewController.swift */; };
-		8497B95F1D8AA82D00055F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497B95D1D8AA82D00055F59 /* Main.storyboard */; };
-		8497B9611D8AA82D00055F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8497B9601D8AA82D00055F59 /* Assets.xcassets */; };
-		8497B9641D8AA82D00055F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497B9621D8AA82D00055F59 /* LaunchScreen.storyboard */; };
-		8497B9781D8AAAD500055F59 /* MessengerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B9771D8AAAD500055F59 /* MessengerProtocol.swift */; };
-		8497B97A1D8AAAFD00055F59 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B9791D8AAAFD00055F59 /* Messenger.swift */; };
-		8497B97C1D8AAEB900055F59 /* DownloaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B97B1D8AAEB900055F59 /* DownloaderProtocol.swift */; };
-		8497B97E1D8AAEEC00055F59 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B97D1D8AAEEC00055F59 /* Downloader.swift */; };
-		8497B9801D8AAF8700055F59 /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B97F1D8AAF8700055F59 /* ApiProtocol.swift */; };
-		8497B9821D8AAFC000055F59 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B9811D8AAFC000055F59 /* ApiClient.swift */; };
-		8497B9841D8AB12700055F59 /* BaseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B9831D8AB12600055F59 /* BaseMessage.swift */; };
-		8497B9861D8AB16900055F59 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B9851D8AB16900055F59 /* ImageResponse.swift */; };
-		8497B98A1D8AB19A00055F59 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B9891D8AB19A00055F59 /* ImageModel.swift */; };
+		840C32C21D8BA8C900D24230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32C11D8BA8C900D24230 /* AppDelegate.swift */; };
+		840C32C41D8BA8C900D24230 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32C31D8BA8C900D24230 /* ViewController.swift */; };
+		840C32C71D8BA8C900D24230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C32C51D8BA8C900D24230 /* Main.storyboard */; };
+		840C32C91D8BA8C900D24230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840C32C81D8BA8C900D24230 /* Assets.xcassets */; };
+		840C32CC1D8BA8C900D24230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C32CA1D8BA8C900D24230 /* LaunchScreen.storyboard */; };
+		840C32DA1D8BA97000D24230 /* MessengerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32D91D8BA97000D24230 /* MessengerProtocol.swift */; };
+		840C32DC1D8BA98D00D24230 /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32DB1D8BA98D00D24230 /* ApiClientProtocol.swift */; };
+		840C32DE1D8BA9AA00D24230 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32DD1D8BA9AA00D24230 /* DataProviderProtocol.swift */; };
+		840C32E01D8BA9C600D24230 /* CacheProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32DF1D8BA9C600D24230 /* CacheProviderProtocol.swift */; };
+		840C32E31D8BAADF00D24230 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32E21D8BAADF00D24230 /* NetworkProtocol.swift */; };
+		840C32E51D8BAB3600D24230 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32E41D8BAB3600D24230 /* Messenger.swift */; };
+		840C32E71D8BAC6400D24230 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32E61D8BAC6400D24230 /* DataProvider.swift */; };
+		840C32E91D8BACCD00D24230 /* CacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32E81D8BACCD00D24230 /* CacheProvider.swift */; };
+		840C32EF1D8BAE6900D24230 /* AppMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32EE1D8BAE6900D24230 /* AppMessage.swift */; };
+		840C32F11D8BAEB700D24230 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32F01D8BAEB700D24230 /* Error.swift */; };
+		840C32F31D8BAF2200D24230 /* MessageCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32F21D8BAF2200D24230 /* MessageCallback.swift */; };
+		840C32F61D8BB8D200D24230 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32F51D8BB8D200D24230 /* Task.swift */; };
+		840C32F81D8BBBA100D24230 /* AsyncTasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32F71D8BBBA100D24230 /* AsyncTasker.swift */; };
+		840C32FA1D8BBCB700D24230 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32F91D8BBCB700D24230 /* ImageModel.swift */; };
+		840C32FD1D8BBCEC00D24230 /* GetImageMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32FC1D8BBCEC00D24230 /* GetImageMessage.swift */; };
+		840C32FF1D8BBDD400D24230 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C32FE1D8BBDD400D24230 /* ApiClient.swift */; };
+		840C33011D8BEAC400D24230 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C33001D8BEAC400D24230 /* ModelProtocol.swift */; };
+		840C33031D8C039800D24230 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C33021D8C039800D24230 /* Downloader.swift */; };
+		842115871D8FD2A300E3E37F /* MessengerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842115861D8FD2A300E3E37F /* MessengerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8497B9561D8AA82C00055F59 /* SwiftCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8497B9591D8AA82D00055F59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8497B95B1D8AA82D00055F59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8497B95E1D8AA82D00055F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8497B9601D8AA82D00055F59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8497B9631D8AA82D00055F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8497B9651D8AA82D00055F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8497B9771D8AAAD500055F59 /* MessengerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerProtocol.swift; sourceTree = "<group>"; };
-		8497B9791D8AAAFD00055F59 /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
-		8497B97B1D8AAEB900055F59 /* DownloaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloaderProtocol.swift; sourceTree = "<group>"; };
-		8497B97D1D8AAEEC00055F59 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
-		8497B97F1D8AAF8700055F59 /* ApiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
-		8497B9811D8AAFC000055F59 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		8497B9831D8AB12600055F59 /* BaseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessage.swift; sourceTree = "<group>"; };
-		8497B9851D8AB16900055F59 /* ImageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
-		8497B9891D8AB19A00055F59 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		840C32BE1D8BA8C900D24230 /* SwiftCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840C32C11D8BA8C900D24230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		840C32C31D8BA8C900D24230 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840C32C61D8BA8C900D24230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		840C32C81D8BA8C900D24230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840C32CB1D8BA8C900D24230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		840C32CD1D8BA8CA00D24230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840C32D91D8BA97000D24230 /* MessengerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerProtocol.swift; sourceTree = "<group>"; };
+		840C32DB1D8BA98D00D24230 /* ApiClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
+		840C32DD1D8BA9AA00D24230 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
+		840C32DF1D8BA9C600D24230 /* CacheProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheProviderProtocol.swift; sourceTree = "<group>"; };
+		840C32E21D8BAADF00D24230 /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		840C32E41D8BAB3600D24230 /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
+		840C32E61D8BAC6400D24230 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		840C32E81D8BACCD00D24230 /* CacheProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheProvider.swift; sourceTree = "<group>"; };
+		840C32EE1D8BAE6900D24230 /* AppMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMessage.swift; sourceTree = "<group>"; };
+		840C32F01D8BAEB700D24230 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		840C32F21D8BAF2200D24230 /* MessageCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCallback.swift; sourceTree = "<group>"; };
+		840C32F51D8BB8D200D24230 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		840C32F71D8BBBA100D24230 /* AsyncTasker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTasker.swift; sourceTree = "<group>"; };
+		840C32F91D8BBCB700D24230 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		840C32FC1D8BBCEC00D24230 /* GetImageMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImageMessage.swift; sourceTree = "<group>"; };
+		840C32FE1D8BBDD400D24230 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		840C33001D8BEAC400D24230 /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
+		840C33021D8C039800D24230 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		842115861D8FD2A300E3E37F /* MessengerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8497B9531D8AA82C00055F59 /* Frameworks */ = {
+		840C32BB1D8BA8C900D24230 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,150 +73,168 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8497B94D1D8AA82C00055F59 = {
+		840C32B51D8BA8C900D24230 = {
 			isa = PBXGroup;
 			children = (
-				8497B9581D8AA82C00055F59 /* SwiftCore */,
-				8497B9571D8AA82C00055F59 /* Products */,
+				840C32C01D8BA8C900D24230 /* SwiftCore */,
+				840C32BF1D8BA8C900D24230 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8497B9571D8AA82C00055F59 /* Products */ = {
+		840C32BF1D8BA8C900D24230 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8497B9561D8AA82C00055F59 /* SwiftCore.app */,
+				840C32BE1D8BA8C900D24230 /* SwiftCore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8497B9581D8AA82C00055F59 /* SwiftCore */ = {
+		840C32C01D8BA8C900D24230 /* SwiftCore */ = {
 			isa = PBXGroup;
 			children = (
-				8497B9871D8AB18800055F59 /* DataModels */,
-				8497B96B1D8AA94500055F59 /* Services */,
-				8497B9591D8AA82D00055F59 /* AppDelegate.swift */,
-				8497B95B1D8AA82D00055F59 /* ViewController.swift */,
-				8497B95D1D8AA82D00055F59 /* Main.storyboard */,
-				8497B9601D8AA82D00055F59 /* Assets.xcassets */,
-				8497B9621D8AA82D00055F59 /* LaunchScreen.storyboard */,
-				8497B9651D8AA82D00055F59 /* Info.plist */,
+				840C32D31D8BA92200D24230 /* Services */,
+				840C32C11D8BA8C900D24230 /* AppDelegate.swift */,
+				840C32C31D8BA8C900D24230 /* ViewController.swift */,
+				840C32C51D8BA8C900D24230 /* Main.storyboard */,
+				840C32C81D8BA8C900D24230 /* Assets.xcassets */,
+				840C32CA1D8BA8C900D24230 /* LaunchScreen.storyboard */,
+				840C32CD1D8BA8CA00D24230 /* Info.plist */,
 			);
 			path = SwiftCore;
 			sourceTree = "<group>";
 		};
-		8497B96B1D8AA94500055F59 /* Services */ = {
+		840C32D31D8BA92200D24230 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8497B9761D8AAA1B00055F59 /* Messenger */,
-				8497B9721D8AA9C300055F59 /* Models */,
-				8497B96E1D8AA96400055F59 /* ApiClient */,
-				8497B96D1D8AA95B00055F59 /* CacheProvider */,
-				8497B96C1D8AA95000055F59 /* DataProvider */,
+				840C32F41D8BB8C700D24230 /* Tasks */,
+				840C32EC1D8BADE900D24230 /* Callback */,
+				840C32EB1D8BADE000D24230 /* ViewModels */,
+				840C32EA1D8BADD800D24230 /* DataModels */,
+				840C32E11D8BAAC600D24230 /* NetworkDownloader */,
+				840C32D81D8BA95400D24230 /* Messages */,
+				840C32D71D8BA94C00D24230 /* CacheProvider */,
+				840C32D61D8BA93D00D24230 /* DataProvider */,
+				840C32D51D8BA93600D24230 /* ApiClient */,
+				840C32D41D8BA92C00D24230 /* Messenger */,
 			);
 			name = Services;
 			sourceTree = "<group>";
 		};
-		8497B96C1D8AA95000055F59 /* DataProvider */ = {
+		840C32D41D8BA92C00D24230 /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = DataProvider;
-			sourceTree = "<group>";
-		};
-		8497B96D1D8AA95B00055F59 /* CacheProvider */ = {
-			isa = PBXGroup;
-			children = (
-				8497B96F1D8AA96A00055F59 /* DatabaseHelper */,
-			);
-			name = CacheProvider;
-			sourceTree = "<group>";
-		};
-		8497B96E1D8AA96400055F59 /* ApiClient */ = {
-			isa = PBXGroup;
-			children = (
-				8497B9701D8AA99300055F59 /* Downloader */,
-				8497B97F1D8AAF8700055F59 /* ApiProtocol.swift */,
-				8497B9811D8AAFC000055F59 /* ApiClient.swift */,
-			);
-			name = ApiClient;
-			sourceTree = "<group>";
-		};
-		8497B96F1D8AA96A00055F59 /* DatabaseHelper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DatabaseHelper;
-			sourceTree = "<group>";
-		};
-		8497B9701D8AA99300055F59 /* Downloader */ = {
-			isa = PBXGroup;
-			children = (
-				8497B97B1D8AAEB900055F59 /* DownloaderProtocol.swift */,
-				8497B97D1D8AAEEC00055F59 /* Downloader.swift */,
-			);
-			name = Downloader;
-			sourceTree = "<group>";
-		};
-		8497B9721D8AA9C300055F59 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8497B9751D8AA9DE00055F59 /* Base */,
-				8497B9741D8AA9D600055F59 /* Requests */,
-				8497B9731D8AA9D000055F59 /* Responses */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		8497B9731D8AA9D000055F59 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Responses;
-			sourceTree = "<group>";
-		};
-		8497B9741D8AA9D600055F59 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				8497B9851D8AB16900055F59 /* ImageResponse.swift */,
-			);
-			name = Requests;
-			sourceTree = "<group>";
-		};
-		8497B9751D8AA9DE00055F59 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				8497B9831D8AB12600055F59 /* BaseMessage.swift */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		8497B9761D8AAA1B00055F59 /* Messenger */ = {
-			isa = PBXGroup;
-			children = (
-				8497B9771D8AAAD500055F59 /* MessengerProtocol.swift */,
-				8497B9791D8AAAFD00055F59 /* Messenger.swift */,
+				840C32D91D8BA97000D24230 /* MessengerProtocol.swift */,
+				840C32E41D8BAB3600D24230 /* Messenger.swift */,
+				842115861D8FD2A300E3E37F /* MessengerHelper.swift */,
 			);
 			name = Messenger;
 			sourceTree = "<group>";
 		};
-		8497B9871D8AB18800055F59 /* DataModels */ = {
+		840C32D51D8BA93600D24230 /* ApiClient */ = {
 			isa = PBXGroup;
 			children = (
-				8497B9891D8AB19A00055F59 /* ImageModel.swift */,
+				840C32DB1D8BA98D00D24230 /* ApiClientProtocol.swift */,
+				840C32FE1D8BBDD400D24230 /* ApiClient.swift */,
+			);
+			name = ApiClient;
+			sourceTree = "<group>";
+		};
+		840C32D61D8BA93D00D24230 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				840C32DD1D8BA9AA00D24230 /* DataProviderProtocol.swift */,
+				840C32E61D8BAC6400D24230 /* DataProvider.swift */,
+			);
+			name = DataProvider;
+			sourceTree = "<group>";
+		};
+		840C32D71D8BA94C00D24230 /* CacheProvider */ = {
+			isa = PBXGroup;
+			children = (
+				840C32DF1D8BA9C600D24230 /* CacheProviderProtocol.swift */,
+				840C32E81D8BACCD00D24230 /* CacheProvider.swift */,
+			);
+			name = CacheProvider;
+			sourceTree = "<group>";
+		};
+		840C32D81D8BA95400D24230 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				840C32FB1D8BBCDD00D24230 /* Impl */,
+				840C32ED1D8BAE5B00D24230 /* Base */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		840C32E11D8BAAC600D24230 /* NetworkDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				840C32E21D8BAADF00D24230 /* NetworkProtocol.swift */,
+				840C33021D8C039800D24230 /* Downloader.swift */,
+			);
+			name = NetworkDownloader;
+			sourceTree = "<group>";
+		};
+		840C32EA1D8BADD800D24230 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = DataModels;
+			sourceTree = "<group>";
+		};
+		840C32EB1D8BADE000D24230 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				840C32F91D8BBCB700D24230 /* ImageModel.swift */,
+				840C33001D8BEAC400D24230 /* ModelProtocol.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		840C32EC1D8BADE900D24230 /* Callback */ = {
+			isa = PBXGroup;
+			children = (
+				840C32F21D8BAF2200D24230 /* MessageCallback.swift */,
+			);
+			name = Callback;
+			sourceTree = "<group>";
+		};
+		840C32ED1D8BAE5B00D24230 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				840C32EE1D8BAE6900D24230 /* AppMessage.swift */,
+				840C32F01D8BAEB700D24230 /* Error.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		840C32F41D8BB8C700D24230 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				840C32F51D8BB8D200D24230 /* Task.swift */,
+				840C32F71D8BBBA100D24230 /* AsyncTasker.swift */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		840C32FB1D8BBCDD00D24230 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				840C32FC1D8BBCEC00D24230 /* GetImageMessage.swift */,
+			);
+			name = Impl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8497B9551D8AA82C00055F59 /* SwiftCore */ = {
+		840C32BD1D8BA8C900D24230 /* SwiftCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8497B9681D8AA82D00055F59 /* Build configuration list for PBXNativeTarget "SwiftCore" */;
+			buildConfigurationList = 840C32D01D8BA8CA00D24230 /* Build configuration list for PBXNativeTarget "SwiftCore" */;
 			buildPhases = (
-				8497B9521D8AA82C00055F59 /* Sources */,
-				8497B9531D8AA82C00055F59 /* Frameworks */,
-				8497B9541D8AA82C00055F59 /* Resources */,
+				840C32BA1D8BA8C900D24230 /* Sources */,
+				840C32BB1D8BA8C900D24230 /* Frameworks */,
+				840C32BC1D8BA8C900D24230 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -204,25 +242,25 @@
 			);
 			name = SwiftCore;
 			productName = SwiftCore;
-			productReference = 8497B9561D8AA82C00055F59 /* SwiftCore.app */;
+			productReference = 840C32BE1D8BA8C900D24230 /* SwiftCore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8497B94E1D8AA82C00055F59 /* Project object */ = {
+		840C32B61D8BA8C900D24230 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Admin;
 				TargetAttributes = {
-					8497B9551D8AA82C00055F59 = {
+					840C32BD1D8BA8C900D24230 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
-			buildConfigurationList = 8497B9511D8AA82C00055F59 /* Build configuration list for PBXProject "SwiftCore" */;
+			buildConfigurationList = 840C32B91D8BA8C900D24230 /* Build configuration list for PBXProject "SwiftCore" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -230,63 +268,73 @@
 				en,
 				Base,
 			);
-			mainGroup = 8497B94D1D8AA82C00055F59;
-			productRefGroup = 8497B9571D8AA82C00055F59 /* Products */;
+			mainGroup = 840C32B51D8BA8C900D24230;
+			productRefGroup = 840C32BF1D8BA8C900D24230 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8497B9551D8AA82C00055F59 /* SwiftCore */,
+				840C32BD1D8BA8C900D24230 /* SwiftCore */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8497B9541D8AA82C00055F59 /* Resources */ = {
+		840C32BC1D8BA8C900D24230 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8497B9641D8AA82D00055F59 /* LaunchScreen.storyboard in Resources */,
-				8497B9611D8AA82D00055F59 /* Assets.xcassets in Resources */,
-				8497B95F1D8AA82D00055F59 /* Main.storyboard in Resources */,
+				840C32CC1D8BA8C900D24230 /* LaunchScreen.storyboard in Resources */,
+				840C32C91D8BA8C900D24230 /* Assets.xcassets in Resources */,
+				840C32C71D8BA8C900D24230 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8497B9521D8AA82C00055F59 /* Sources */ = {
+		840C32BA1D8BA8C900D24230 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8497B98A1D8AB19A00055F59 /* ImageModel.swift in Sources */,
-				8497B95C1D8AA82D00055F59 /* ViewController.swift in Sources */,
-				8497B95A1D8AA82D00055F59 /* AppDelegate.swift in Sources */,
-				8497B9861D8AB16900055F59 /* ImageResponse.swift in Sources */,
-				8497B9801D8AAF8700055F59 /* ApiProtocol.swift in Sources */,
-				8497B9841D8AB12700055F59 /* BaseMessage.swift in Sources */,
-				8497B9821D8AAFC000055F59 /* ApiClient.swift in Sources */,
-				8497B97E1D8AAEEC00055F59 /* Downloader.swift in Sources */,
-				8497B97C1D8AAEB900055F59 /* DownloaderProtocol.swift in Sources */,
-				8497B9781D8AAAD500055F59 /* MessengerProtocol.swift in Sources */,
-				8497B97A1D8AAAFD00055F59 /* Messenger.swift in Sources */,
+				840C32C41D8BA8C900D24230 /* ViewController.swift in Sources */,
+				840C32E01D8BA9C600D24230 /* CacheProviderProtocol.swift in Sources */,
+				840C32DC1D8BA98D00D24230 /* ApiClientProtocol.swift in Sources */,
+				840C32E91D8BACCD00D24230 /* CacheProvider.swift in Sources */,
+				840C32FD1D8BBCEC00D24230 /* GetImageMessage.swift in Sources */,
+				840C32F11D8BAEB700D24230 /* Error.swift in Sources */,
+				840C32E51D8BAB3600D24230 /* Messenger.swift in Sources */,
+				840C32E31D8BAADF00D24230 /* NetworkProtocol.swift in Sources */,
+				840C32C21D8BA8C900D24230 /* AppDelegate.swift in Sources */,
+				840C32E71D8BAC6400D24230 /* DataProvider.swift in Sources */,
+				840C33031D8C039800D24230 /* Downloader.swift in Sources */,
+				842115871D8FD2A300E3E37F /* MessengerHelper.swift in Sources */,
+				840C33011D8BEAC400D24230 /* ModelProtocol.swift in Sources */,
+				840C32DE1D8BA9AA00D24230 /* DataProviderProtocol.swift in Sources */,
+				840C32FF1D8BBDD400D24230 /* ApiClient.swift in Sources */,
+				840C32DA1D8BA97000D24230 /* MessengerProtocol.swift in Sources */,
+				840C32EF1D8BAE6900D24230 /* AppMessage.swift in Sources */,
+				840C32F61D8BB8D200D24230 /* Task.swift in Sources */,
+				840C32F31D8BAF2200D24230 /* MessageCallback.swift in Sources */,
+				840C32F81D8BBBA100D24230 /* AsyncTasker.swift in Sources */,
+				840C32FA1D8BBCB700D24230 /* ImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8497B95D1D8AA82D00055F59 /* Main.storyboard */ = {
+		840C32C51D8BA8C900D24230 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8497B95E1D8AA82D00055F59 /* Base */,
+				840C32C61D8BA8C900D24230 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8497B9621D8AA82D00055F59 /* LaunchScreen.storyboard */ = {
+		840C32CA1D8BA8C900D24230 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8497B9631D8AA82D00055F59 /* Base */,
+				840C32CB1D8BA8C900D24230 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -294,7 +342,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8497B9661D8AA82D00055F59 /* Debug */ = {
+		840C32CE1D8BA8CA00D24230 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,7 +387,7 @@
 			};
 			name = Debug;
 		};
-		8497B9671D8AA82D00055F59 /* Release */ = {
+		840C32CF1D8BA8CA00D24230 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -377,7 +425,7 @@
 			};
 			name = Release;
 		};
-		8497B9691D8AA82D00055F59 /* Debug */ = {
+		840C32D11D8BA8CA00D24230 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -388,7 +436,7 @@
 			};
 			name = Debug;
 		};
-		8497B96A1D8AA82D00055F59 /* Release */ = {
+		840C32D21D8BA8CA00D24230 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -402,24 +450,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8497B9511D8AA82C00055F59 /* Build configuration list for PBXProject "SwiftCore" */ = {
+		840C32B91D8BA8C900D24230 /* Build configuration list for PBXProject "SwiftCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8497B9661D8AA82D00055F59 /* Debug */,
-				8497B9671D8AA82D00055F59 /* Release */,
+				840C32CE1D8BA8CA00D24230 /* Debug */,
+				840C32CF1D8BA8CA00D24230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8497B9681D8AA82D00055F59 /* Build configuration list for PBXNativeTarget "SwiftCore" */ = {
+		840C32D01D8BA8CA00D24230 /* Build configuration list for PBXNativeTarget "SwiftCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8497B9691D8AA82D00055F59 /* Debug */,
-				8497B96A1D8AA82D00055F59 /* Release */,
+				840C32D11D8BA8CA00D24230 /* Debug */,
+				840C32D21D8BA8CA00D24230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8497B94E1D8AA82C00055F59 /* Project object */;
+	rootObject = 840C32B61D8BA8C900D24230 /* Project object */;
 }

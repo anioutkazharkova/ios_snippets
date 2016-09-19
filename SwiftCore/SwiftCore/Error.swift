@@ -1,5 +1,5 @@
 //
-//  MessengerProtocol.swift
+//  Error.swift
 //  SwiftCore
 //
 //  Created by Admin on 16.09.16.
@@ -8,12 +8,7 @@
 
 import Foundation
 
-protocol  MessengerProtocol {
+class Error
+{
     
-  
-    init(dataProvider:DataProviderProtocol!)
-    
-
-    
-   
 }

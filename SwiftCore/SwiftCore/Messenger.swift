@@ -2,7 +2,7 @@
 //  Messenger.swift
 //  SwiftCore
 //
-//  Created by Admin on 15.09.16.
+//  Created by Admin on 16.09.16.
 //  Copyright © 2016 Admin. All rights reserved.
 //
 
@@ -10,33 +10,26 @@ import Foundation
 
 class Messenger:MessengerProtocol
 {
+ private var dataProvider:DataProviderProtocol!
+var _messenger = MessengerHub()
     
-    var api:ApiProtocol!
+  required init(dataProvider: DataProviderProtocol!) {
+        self.dataProvider=dataProvider
+    _messenger.tokens["\(GetImageMessage.self)"] = SubToken<GetImageMessage>(type: GetImageMessage.self, action: processGetImage)
     
-    init(api:ApiProtocol!)
+    }
+   private func processGetImage(message: GetImageMessage)->GetImageMessage
     {
-        self.api=api
+     let result = self.dataProvider.getImageByUrl(message.content!)
+        message.content?.imageData=result.imageData
+        return message
     }
     
-    
-    func getImageByUrl(url:String,callback:(NSData!)->Void)
-
+    func publish<TMessage:MessageProtocol>(message: TMessage)
     {
-        performTask({(urlString) in
-            self.api.getImageByUrl(urlString!)
-            
-            }, callback: callback, model: url)
+          _messenger.publish(message)
     }
     
-    private func performTask<TModel,TResult>(task:(TModel?)->TResult,callback:(TResult)->Void,model:TModel?)
-    {
-        let queue=NSOperationQueue()
-        let operation = NSBlockOperation(block: {
-        let result = task(model)
-            NSOperationQueue.mainQueue().addOperationWithBlock({ 
-                callback(result)
-            })
-        })
-        queue.addOperation(operation)
-    }
+  
+    
 }

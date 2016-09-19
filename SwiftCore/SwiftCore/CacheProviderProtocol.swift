@@ -1,5 +1,5 @@
 //
-//  MessengerProtocol.swift
+//  CacheProviderProtocol.swift
 //  SwiftCore
 //
 //  Created by Admin on 16.09.16.
@@ -8,12 +8,6 @@
 
 import Foundation
 
-protocol  MessengerProtocol {
-    
-  
-    init(dataProvider:DataProviderProtocol!)
-    
-
-    
+protocol  CacheProviderProtocol {
    
 }

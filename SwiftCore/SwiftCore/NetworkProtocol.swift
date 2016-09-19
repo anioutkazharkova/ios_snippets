@@ -1,5 +1,5 @@
 //
-//  MessengerProtocol.swift
+//  NetworkProtocol.swift
 //  SwiftCore
 //
 //  Created by Admin on 16.09.16.
@@ -8,12 +8,7 @@
 
 import Foundation
 
-protocol  MessengerProtocol {
-    
+protocol  NetworkProtocol {
   
-    init(dataProvider:DataProviderProtocol!)
-    
-
-    
-   
+    func downloadFile(url:String)->NSData!
 }
