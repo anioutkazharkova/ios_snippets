@@ -29,6 +29,11 @@ class AsyncTasker<TMessage:MessageProtocol>
     }
     func cancel()
     {
+        
+        self.queue.cancelAllOperations()
+    }
+    deinit
+    {
         self.queue.cancelAllOperations()
     }
 

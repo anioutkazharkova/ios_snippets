@@ -49,9 +49,7 @@ class MessengerHub{
         let  task = Task<TMessage>(action: token.action, message: message)
         let callback = CallbackTask<TMessage>(action:self.setCallback)
         token.asyncPublisher.performAction(task, callback: callback)
-        
-     /*
-    token.asyncPublisher.performAction(Task<TMessage>(action: token.action,message: message),callback:CallbackTask<TMessage>(action: self.setCallback))*/
+     
        
     }
     func setCallback<TMessage:MessageProtocol>(message: TMessage)

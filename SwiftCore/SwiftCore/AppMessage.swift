@@ -11,6 +11,8 @@ import Foundation
 class AppMessage<TModel>:MessageProtocol{
     
     private var _callback:CallbackProtocol?
+    private var _sender:AnyObject?
+    var sender:AnyObject?{get{return _sender} set {_sender=newValue}}
     var callback: CallbackProtocol?{get{return _callback} set{_callback=newValue}}
     var content:TModel?
     var isCanceled:Bool=false
@@ -29,5 +31,6 @@ class AppMessage<TModel>:MessageProtocol{
 protocol MessageProtocol {
     
     var callback:CallbackProtocol?{get set}
+    var sender:AnyObject?{get set}
     
 }
