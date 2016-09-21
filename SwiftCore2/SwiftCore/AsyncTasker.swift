@@ -9,12 +9,12 @@
 import Foundation
 
 
-class AsyncTasker<TMessage:MessageProtocol>
+public final class AsyncTasker<TMessage:MessageProtocol>
 {
     private var queue=NSOperationQueue()
     private var isCanceled:Bool=false
     
-    func performAction(task: Action<TMessage>, callback: CallbackAction<TMessage>)
+  public func performAction(task: Action<TMessage>, callback: CallbackAction<TMessage>)
     {
       let  operation = NSBlockOperation(block: {
       let  result =  task.performAction()
@@ -40,12 +40,12 @@ class AsyncTasker<TMessage:MessageProtocol>
         
         self.queue.addOperation(operation)
     }
-    func cancelTask() {
+   public func cancelTask() {
         cancel()
     }
-    func cancel()
-    {isCanceled=true
-        print("cancel")
+  private  func cancel()
+    {
+        self.isCanceled=true
         self.queue.cancelAllOperations()
     }
     deinit

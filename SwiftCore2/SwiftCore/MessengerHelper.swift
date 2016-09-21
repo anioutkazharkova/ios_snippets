@@ -8,39 +8,42 @@
 
 import Foundation
 
-internal class SubToken<TMessage:MessageProtocol>:TokenProtocol
+protocol  TokenProtocol {}
+class SubToken<TMessage:MessageProtocol>:TokenProtocol
 {
-    private var messageType:MessageProtocol.Type
-   
+    
+    private var _messageType:MessageProtocol.Type
     var action:(message: TMessage)->TMessage
+    
     required init(type: MessageProtocol.Type,action: (message: TMessage)->TMessage)
     {
-        self.messageType=type
+        self._messageType=type
         self.action=action
         
     }
     
 }
-protocol  TokenProtocol {
-    
-}
-class MessengerHub:MessengerHubProtocol{
+
+
+extension SwiftMessenger
+{
+internal class MessengerHub:MessengerHubProtocol{
    
-   private var tokens = [String:TokenProtocol]()
+   private var _tokens = [String:TokenProtocol]()
 
     
-    func addInnerSubscriber<TMessage:MessageProtocol>(type: MessageProtocol.Type,action: (message: TMessage)->TMessage)->()
+   internal func addInnerSubscriber<TMessage:MessageProtocol>(type: MessageProtocol.Type,action: (message: TMessage)->TMessage)->()
     {
-        tokens["\(type)"]=SubToken<TMessage>(type: type, action: action)
+        self._tokens["\(type)"]=SubToken<TMessage>(type: type, action: action)
     }
-    func removeInnerSubscriber<TMessage:MessageProtocol>(token: SubToken<TMessage>)
+   internal func removeInnerSubscribers()->()
     {
-        tokens["\(TMessage.self)"]=nil
+       self._tokens=[String:TokenProtocol]()
     }
     
-    func publish<TMessage:MessageProtocol>(message: TMessage,callback: MessageCallback<TMessage>)
+    internal func publish<TMessage:MessageProtocol>(message: TMessage,callback: MessageCallback<TMessage>)
     {
-       if let t = tokens["\(message.dynamicType)"]
+        if let t = self._tokens["\(message.dynamicType)"]
         {
             if let token = t as? SubToken<TMessage>
            {
@@ -57,9 +60,11 @@ class MessengerHub:MessengerHubProtocol{
       }
 
 }
-protocol  MessengerHubProtocol {
-    func addInnerSubscriber<TMessage:MessageProtocol>(type: MessageProtocol.Type,action: (message: TMessage)->TMessage)->()
-    func removeInnerSubscriber<TMessage:MessageProtocol>(token: SubToken<TMessage>)
-    func publish<TMessage:MessageProtocol>(message: TMessage,callback: MessageCallback<TMessage>)
 
+}
+public protocol  MessengerHubProtocol {
+    func addInnerSubscriber<TMessage:MessageProtocol>(type: MessageProtocol.Type,action: (message: TMessage)->TMessage)->()
+    func removeInnerSubscribers()->()
+    func publish<TMessage:MessageProtocol>(message: TMessage,callback: MessageCallback<TMessage>)
+    
 }

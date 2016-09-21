@@ -8,36 +8,28 @@
 
 import Foundation
 
-class Messenger:MessengerProtocol
+class Messenger:SwiftMessenger
 {
  private var dataProvider:DataProviderProtocol!
-private var _messenger = MessengerHub()
     
   required init(dataProvider: DataProviderProtocol!) {
-        self.dataProvider=dataProvider
+    super.init()
+   self.dataProvider=dataProvider
   
-    _messenger.addInnerSubscriber(GetImageMessage.self, action: processGetImage)
     }
    
+internal override func startServices()
+{
+     self._messenger?.addInnerSubscriber(GetImageMessage.self, action: processGetImage)
+}
+ 
   
     
-    func publish<TMessage:MessageProtocol>(message: TMessage,handler: MessageCallback<TMessage>)
-    {
-        _messenger.publish(message,callback: handler)
-    }
-    
-    private func processGetImage(message: GetImageMessage)->GetImageMessage
-    {
+private func processGetImage(message: GetImageMessage)->GetImageMessage
+{
         let result = self.dataProvider.getImageByUrl(message.content!)
         message.content?.imageData=result.imageData
         return message
-    }
-    
 }
-protocol  MessengerProtocol {   
-    
-    init(dataProvider:DataProviderProtocol!)
-    func publish<TMessage:MessageProtocol>(message: TMessage,handler: MessageCallback<TMessage>)->()
-   
     
 }

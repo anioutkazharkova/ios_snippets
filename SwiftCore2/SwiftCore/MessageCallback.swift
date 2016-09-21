@@ -8,19 +8,18 @@
 
 import Foundation
 
-class  MessageCallback<TMessage:MessageProtocol>:CallbackProtocol{
+public class  MessageCallback<TMessage:MessageProtocol>{
     
-    var callbackAction:((message: TMessage)->())?
-    required init(action: ((message: TMessage)->())?)
+   private var callbackAction:((message: TMessage)->())?
+    
+    required public init(action: ((message: TMessage)->())?)
     {
         self.callbackAction=action
     }
-    func callAction(message: TMessage)
+  public func callAction(message: TMessage)
     {
         self.callbackAction?(message: message)
     }
    
 }
-protocol  CallbackProtocol {
-    
-}
+

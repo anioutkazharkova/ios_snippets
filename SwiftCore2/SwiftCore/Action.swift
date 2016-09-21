@@ -7,39 +7,36 @@
 //
  import Foundation
 
-class Action<TMessage:MessageProtocol>
+public class Action<TMessage:MessageProtocol>
 {
     private var action:((message: TMessage)->(TMessage))
     private var data: TMessage?
-    var initialMessage:TMessage?{get{return data}}
+    public var initialMessage:TMessage?{get{return data}}
 
-    required init(action:((message: TMessage)->(TMessage)),message: TMessage?)
+    required public init(action:((message: TMessage)->(TMessage)),message: TMessage?)
     {
         self.action = action
         self.data = message
     }
     
-    func performAction()->TMessage
+    public func performAction()->TMessage
     {
       return self.action(message: self.data!)
     }
-    func performAction(message: TMessage)
-    {
-        self.action(message: message)
-    }
+    
 }
-class CallbackAction<TMessage:MessageProtocol>
+public class CallbackAction<TMessage:MessageProtocol>
 {
     private var action:(TMessage)->()
     
     
-    required init(action: (TMessage)->())
+    required public init(action: (TMessage)->())
     {
         self.action = action
       
     }
     
-    func performAction(message: TMessage)
+    public func performAction(message: TMessage)
     {
         self.action(message)
     }

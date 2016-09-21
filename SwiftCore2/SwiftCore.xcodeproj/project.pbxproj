@@ -31,6 +31,7 @@
 		840C33031D8C039800D24230 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C33021D8C039800D24230 /* Downloader.swift */; };
 		842115871D8FD2A300E3E37F /* MessengerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842115861D8FD2A300E3E37F /* MessengerHelper.swift */; };
 		842630B31D912E7400AA34CE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842630B21D912E7400AA34CE /* Task.swift */; };
+		843F6B741D924D1700FBA5AC /* SwiftMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F6B731D924D1700FBA5AC /* SwiftMessenger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		840C33021D8C039800D24230 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		842115861D8FD2A300E3E37F /* MessengerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerHelper.swift; sourceTree = "<group>"; };
 		842630B21D912E7400AA34CE /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		843F6B731D924D1700FBA5AC /* SwiftMessenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMessenger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				840C32E41D8BAB3600D24230 /* Messenger.swift */,
 				842115861D8FD2A300E3E37F /* MessengerHelper.swift */,
+				843F6B731D924D1700FBA5AC /* SwiftMessenger.swift */,
 			);
 			name = Messenger;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840C32C41D8BA8C900D24230 /* ViewController.swift in Sources */,
+				843F6B741D924D1700FBA5AC /* SwiftMessenger.swift in Sources */,
 				840C32E01D8BA9C600D24230 /* CacheProviderProtocol.swift in Sources */,
 				840C32DC1D8BA98D00D24230 /* ApiClientProtocol.swift in Sources */,
 				840C32E91D8BACCD00D24230 /* CacheProvider.swift in Sources */,

@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		843F6B831D925AF400FBA5AC /* SwiftTinyMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F6B821D925AF400FBA5AC /* SwiftTinyMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F6B8E1D925BB700FBA5AC /* MessengerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F6B8C1D925BB700FBA5AC /* MessengerHelper.swift */; };
+		843F6B8F1D925BB700FBA5AC /* SwiftMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F6B8D1D925BB700FBA5AC /* SwiftMessenger.swift */; };
+		843F6B941D925BE900FBA5AC /* AsyncTasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F6B911D925BE900FBA5AC /* AsyncTasker.swift */; };
+		843F6B951D925BE900FBA5AC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F6B921D925BE900FBA5AC /* Task.swift */; };
+		843F6B961D925BE900FBA5AC /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F6B931D925BE900FBA5AC /* Action.swift */; };
+		843F6B9B1D925C1C00FBA5AC /* AppMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F6B981D925C1C00FBA5AC /* AppMessage.swift */; };
+		843F6B9C1D925C1C00FBA5AC /* MessageCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F6B991D925C1C00FBA5AC /* MessageCallback.swift */; };
+		843F6B9D1D925C1C00FBA5AC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F6B9A1D925C1C00FBA5AC /* Error.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		843F6B7F1D925AF300FBA5AC /* SwiftTinyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftTinyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		843F6B821D925AF400FBA5AC /* SwiftTinyMessenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftTinyMessenger.h; sourceTree = "<group>"; };
+		843F6B841D925AF400FBA5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843F6B8C1D925BB700FBA5AC /* MessengerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessengerHelper.swift; path = ../../SwiftCore2/SwiftCore/MessengerHelper.swift; sourceTree = "<group>"; };
+		843F6B8D1D925BB700FBA5AC /* SwiftMessenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftMessenger.swift; path = ../../SwiftCore2/SwiftCore/SwiftMessenger.swift; sourceTree = "<group>"; };
+		843F6B911D925BE900FBA5AC /* AsyncTasker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AsyncTasker.swift; path = ../../SwiftCore2/SwiftCore/AsyncTasker.swift; sourceTree = "<group>"; };
+		843F6B921D925BE900FBA5AC /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Task.swift; path = ../../SwiftCore2/SwiftCore/Task.swift; sourceTree = "<group>"; };
+		843F6B931D925BE900FBA5AC /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Action.swift; path = ../../SwiftCore2/SwiftCore/Action.swift; sourceTree = "<group>"; };
+		843F6B981D925C1C00FBA5AC /* AppMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppMessage.swift; path = ../../SwiftCore2/SwiftCore/AppMessage.swift; sourceTree = "<group>"; };
+		843F6B991D925C1C00FBA5AC /* MessageCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageCallback.swift; path = ../../SwiftCore2/SwiftCore/MessageCallback.swift; sourceTree = "<group>"; };
+		843F6B9A1D925C1C00FBA5AC /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Error.swift; path = ../../SwiftCore2/SwiftCore/Error.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		843F6B7B1D925AF300FBA5AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		843F6B751D925AF300FBA5AC = {
+			isa = PBXGroup;
+			children = (
+				843F6B811D925AF400FBA5AC /* SwiftTinyMessenger */,
+				843F6B801D925AF300FBA5AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		843F6B801D925AF300FBA5AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				843F6B7F1D925AF300FBA5AC /* SwiftTinyMessenger.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		843F6B811D925AF400FBA5AC /* SwiftTinyMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				843F6B8B1D925B6300FBA5AC /* Messenger */,
+				843F6B821D925AF400FBA5AC /* SwiftTinyMessenger.h */,
+				843F6B841D925AF400FBA5AC /* Info.plist */,
+			);
+			path = SwiftTinyMessenger;
+			sourceTree = "<group>";
+		};
+		843F6B8B1D925B6300FBA5AC /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				843F6B971D925BF900FBA5AC /* Message */,
+				843F6B901D925BBF00FBA5AC /* Tasks */,
+				843F6B8C1D925BB700FBA5AC /* MessengerHelper.swift */,
+				843F6B8D1D925BB700FBA5AC /* SwiftMessenger.swift */,
+			);
+			name = Messenger;
+			sourceTree = "<group>";
+		};
+		843F6B901D925BBF00FBA5AC /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				843F6B911D925BE900FBA5AC /* AsyncTasker.swift */,
+				843F6B921D925BE900FBA5AC /* Task.swift */,
+				843F6B931D925BE900FBA5AC /* Action.swift */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		843F6B971D925BF900FBA5AC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				843F6B981D925C1C00FBA5AC /* AppMessage.swift */,
+				843F6B991D925C1C00FBA5AC /* MessageCallback.swift */,
+				843F6B9A1D925C1C00FBA5AC /* Error.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		843F6B7C1D925AF300FBA5AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F6B831D925AF400FBA5AC /* SwiftTinyMessenger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		843F6B7E1D925AF300FBA5AC /* SwiftTinyMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843F6B871D925AF400FBA5AC /* Build configuration list for PBXNativeTarget "SwiftTinyMessenger" */;
+			buildPhases = (
+				843F6B7A1D925AF300FBA5AC /* Sources */,
+				843F6B7B1D925AF300FBA5AC /* Frameworks */,
+				843F6B7C1D925AF300FBA5AC /* Headers */,
+				843F6B7D1D925AF300FBA5AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTinyMessenger;
+			productName = SwiftTinyMessenger;
+			productReference = 843F6B7F1D925AF300FBA5AC /* SwiftTinyMessenger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		843F6B761D925AF300FBA5AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					843F6B7E1D925AF300FBA5AC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 843F6B791D925AF300FBA5AC /* Build configuration list for PBXProject "SwiftTinyMessenger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 843F6B751D925AF300FBA5AC;
+			productRefGroup = 843F6B801D925AF300FBA5AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				843F6B7E1D925AF300FBA5AC /* SwiftTinyMessenger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		843F6B7D1D925AF300FBA5AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		843F6B7A1D925AF300FBA5AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F6B9D1D925C1C00FBA5AC /* Error.swift in Sources */,
+				843F6B9C1D925C1C00FBA5AC /* MessageCallback.swift in Sources */,
+				843F6B951D925BE900FBA5AC /* Task.swift in Sources */,
+				843F6B8E1D925BB700FBA5AC /* MessengerHelper.swift in Sources */,
+				843F6B8F1D925BB700FBA5AC /* SwiftMessenger.swift in Sources */,
+				843F6B9B1D925C1C00FBA5AC /* AppMessage.swift in Sources */,
+				843F6B961D925BE900FBA5AC /* Action.swift in Sources */,
+				843F6B941D925BE900FBA5AC /* AsyncTasker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		843F6B851D925AF400FBA5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		843F6B861D925AF400FBA5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		843F6B881D925AF400FBA5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SwiftTinyMessenger/Info.plist;
+				INSTALL_PATH = "@executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.SwiftTinyMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		843F6B891D925AF400FBA5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SwiftTinyMessenger/Info.plist;
+				INSTALL_PATH = "@executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.SwiftTinyMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		843F6B791D925AF300FBA5AC /* Build configuration list for PBXProject "SwiftTinyMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843F6B851D925AF400FBA5AC /* Debug */,
+				843F6B861D925AF400FBA5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843F6B871D925AF400FBA5AC /* Build configuration list for PBXNativeTarget "SwiftTinyMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843F6B881D925AF400FBA5AC /* Debug */,
+				843F6B891D925AF400FBA5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 843F6B761D925AF300FBA5AC /* Project object */;
+}

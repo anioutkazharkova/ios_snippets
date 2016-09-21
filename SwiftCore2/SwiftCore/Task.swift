@@ -9,12 +9,12 @@
 import Foundation
 
 
-class Task<TMessage:MessageProtocol>:TaskTokenProtocol
+public final class Task<TMessage:MessageProtocol>:TaskTokenProtocol
 {
 private var callback:MessageCallback<TMessage>
 private var asyncTasker=AsyncTasker<TMessage>()
     
-    required init(callback: MessageCallback<TMessage>)
+    required public init(callback: MessageCallback<TMessage>)
     {
         self.callback=callback
     }
@@ -33,13 +33,13 @@ private var asyncTasker=AsyncTasker<TMessage>()
     {
         self.asyncTasker.cancelTask()
     }
-    func cancelTask() {
+    public func cancelTask() {
         self.cancel()
     }
    
 }
 
-protocol  TaskTokenProtocol {
+public protocol  TaskTokenProtocol {
     func cancelTask()->()
     
 }

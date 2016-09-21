@@ -1,0 +1,10 @@
+framework module SwiftTinyMessenger {
+  umbrella header "SwiftTinyMessenger.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftTinyMessenger.Swift {
+    header "SwiftTinyMessenger-Swift.h"
+}
