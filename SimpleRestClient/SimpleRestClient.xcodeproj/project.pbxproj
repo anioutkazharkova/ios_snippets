@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74E591D06AB43837A5AC7B1F /* Pods_SimpleRestClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA1593C74B696E66C9107E /* Pods_SimpleRestClient.framework */; };
+		844899091D98CD0F001B99DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844899081D98CD0F001B99DE /* AppDelegate.swift */; };
+		8448990B1D98CD0F001B99DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448990A1D98CD0F001B99DE /* ViewController.swift */; };
+		8448990E1D98CD0F001B99DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448990C1D98CD0F001B99DE /* Main.storyboard */; };
+		844899101D98CD10001B99DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448990F1D98CD10001B99DE /* Assets.xcassets */; };
+		844899131D98CD10001B99DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844899111D98CD10001B99DE /* LaunchScreen.storyboard */; };
+		8448991C1D98DBE1001B99DE /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448991B1D98DBE1001B99DE /* RestClient.swift */; };
+		8448991E1D98DF81001B99DE /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448991D1D98DF81001B99DE /* Todo.swift */; };
+		844899211D98E6EB001B99DE /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844899201D98E6EB001B99DE /* JsonHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68942E47A7B09B52ED7CF45C /* Pods-SimpleRestClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRestClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleRestClient/Pods-SimpleRestClient.release.xcconfig"; sourceTree = "<group>"; };
+		844899051D98CD0F001B99DE /* SimpleRestClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRestClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		844899081D98CD0F001B99DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8448990A1D98CD0F001B99DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8448990D1D98CD0F001B99DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8448990F1D98CD10001B99DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		844899121D98CD10001B99DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		844899141D98CD10001B99DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8448991B1D98DBE1001B99DE /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		8448991D1D98DF81001B99DE /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		844899201D98E6EB001B99DE /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		AFAA1593C74B696E66C9107E /* Pods_SimpleRestClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleRestClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EA84F1943CA61536C9F8AA /* Pods-SimpleRestClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRestClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleRestClient/Pods-SimpleRestClient.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		844899021D98CD0F001B99DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E591D06AB43837A5AC7B1F /* Pods_SimpleRestClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CA4D4B9E73F9591842E6541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFAA1593C74B696E66C9107E /* Pods_SimpleRestClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		844898FC1D98CD0E001B99DE = {
+			isa = PBXGroup;
+			children = (
+				844899071D98CD0F001B99DE /* SimpleRestClient */,
+				844899061D98CD0F001B99DE /* Products */,
+				EC0A8484955C98FA894B9388 /* Pods */,
+				2CA4D4B9E73F9591842E6541 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		844899061D98CD0F001B99DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844899051D98CD0F001B99DE /* SimpleRestClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		844899071D98CD0F001B99DE /* SimpleRestClient */ = {
+			isa = PBXGroup;
+			children = (
+				8448991F1D98E6B0001B99DE /* JsonHelper */,
+				8448991A1D98D6DF001B99DE /* RestClient */,
+				844899081D98CD0F001B99DE /* AppDelegate.swift */,
+				8448990A1D98CD0F001B99DE /* ViewController.swift */,
+				8448990C1D98CD0F001B99DE /* Main.storyboard */,
+				8448990F1D98CD10001B99DE /* Assets.xcassets */,
+				844899111D98CD10001B99DE /* LaunchScreen.storyboard */,
+				844899141D98CD10001B99DE /* Info.plist */,
+				8448991D1D98DF81001B99DE /* Todo.swift */,
+			);
+			path = SimpleRestClient;
+			sourceTree = "<group>";
+		};
+		8448991A1D98D6DF001B99DE /* RestClient */ = {
+			isa = PBXGroup;
+			children = (
+				8448991B1D98DBE1001B99DE /* RestClient.swift */,
+			);
+			name = RestClient;
+			sourceTree = "<group>";
+		};
+		8448991F1D98E6B0001B99DE /* JsonHelper */ = {
+			isa = PBXGroup;
+			children = (
+				844899201D98E6EB001B99DE /* JsonHelper.swift */,
+			);
+			name = JsonHelper;
+			sourceTree = "<group>";
+		};
+		EC0A8484955C98FA894B9388 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA84F1943CA61536C9F8AA /* Pods-SimpleRestClient.debug.xcconfig */,
+				68942E47A7B09B52ED7CF45C /* Pods-SimpleRestClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		844899041D98CD0F001B99DE /* SimpleRestClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844899171D98CD10001B99DE /* Build configuration list for PBXNativeTarget "SimpleRestClient" */;
+			buildPhases = (
+				1A2D8AD4B0C8DA69AF286C18 /* [CP] Check Pods Manifest.lock */,
+				844899011D98CD0F001B99DE /* Sources */,
+				844899021D98CD0F001B99DE /* Frameworks */,
+				844899031D98CD0F001B99DE /* Resources */,
+				4F0063E2F808437C476832AB /* [CP] Embed Pods Frameworks */,
+				BDE1FE65604E0CDD6EE49086 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleRestClient;
+			productName = SimpleRestClient;
+			productReference = 844899051D98CD0F001B99DE /* SimpleRestClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		844898FD1D98CD0E001B99DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					844899041D98CD0F001B99DE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 844899001D98CD0E001B99DE /* Build configuration list for PBXProject "SimpleRestClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 844898FC1D98CD0E001B99DE;
+			productRefGroup = 844899061D98CD0F001B99DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				844899041D98CD0F001B99DE /* SimpleRestClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		844899031D98CD0F001B99DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844899131D98CD10001B99DE /* LaunchScreen.storyboard in Resources */,
+				844899101D98CD10001B99DE /* Assets.xcassets in Resources */,
+				8448990E1D98CD0F001B99DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A2D8AD4B0C8DA69AF286C18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F0063E2F808437C476832AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleRestClient/Pods-SimpleRestClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE1FE65604E0CDD6EE49086 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleRestClient/Pods-SimpleRestClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		844899011D98CD0F001B99DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8448990B1D98CD0F001B99DE /* ViewController.swift in Sources */,
+				8448991C1D98DBE1001B99DE /* RestClient.swift in Sources */,
+				844899091D98CD0F001B99DE /* AppDelegate.swift in Sources */,
+				8448991E1D98DF81001B99DE /* Todo.swift in Sources */,
+				844899211D98E6EB001B99DE /* JsonHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8448990C1D98CD0F001B99DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8448990D1D98CD0F001B99DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		844899111D98CD10001B99DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844899121D98CD10001B99DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		844899151D98CD10001B99DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		844899161D98CD10001B99DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		844899181D98CD10001B99DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3EA84F1943CA61536C9F8AA /* Pods-SimpleRestClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleRestClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.SimpleRestClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		844899191D98CD10001B99DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68942E47A7B09B52ED7CF45C /* Pods-SimpleRestClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleRestClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.SimpleRestClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		844899001D98CD0E001B99DE /* Build configuration list for PBXProject "SimpleRestClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844899151D98CD10001B99DE /* Debug */,
+				844899161D98CD10001B99DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844899171D98CD10001B99DE /* Build configuration list for PBXNativeTarget "SimpleRestClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844899181D98CD10001B99DE /* Debug */,
+				844899191D98CD10001B99DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 844898FD1D98CD0E001B99DE /* Project object */;
+}
