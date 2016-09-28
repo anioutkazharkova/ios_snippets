@@ -27,7 +27,6 @@
 		840EF70E1D927E7B00CB049D /* SwiftTinyMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840EF70C1D927D1600CB049D /* SwiftTinyMessenger.framework */; };
 		840EF70F1D927E7B00CB049D /* SwiftTinyMessenger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 840EF70C1D927D1600CB049D /* SwiftTinyMessenger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		848A212E1D92928700DEFB82 /* BaseTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A212D1D92928700DEFB82 /* BaseTable.swift */; };
-		84A5B3281D92954E00FF43F8 /* Pods_SwiftCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6DDD51E4600A5DEC3FDCAE /* Pods_SwiftCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A5B3281D92954E00FF43F8 /* Pods_SwiftCore.framework in Frameworks */,
 				840EF70E1D927E7B00CB049D /* SwiftTinyMessenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
